@@ -3,7 +3,7 @@ object FRMPrincipal: TFRMPrincipal
   Top = 0
   Caption = 'Gerenciador de Projetos'
   ClientHeight = 621
-  ClientWidth = 1420
+  ClientWidth = 1464
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -3892,40 +3892,44 @@ object FRMPrincipal: TFRMPrincipal
   object cxPageControl1: TcxPageControl
     Left = 0
     Top = 0
-    Width = 1420
+    Width = 1464
     Height = 621
     Margins.Left = 4
     Margins.Top = 4
     Margins.Right = 4
     Margins.Bottom = 4
     Align = alClient
+    Anchors = [akTop, akRight]
     TabOrder = 0
     Properties.ActivePage = tabVisualizacao
     Properties.CustomButtons.Buttons = <>
+    ExplicitWidth = 1420
     ExplicitHeight = 631
     ClientRectBottom = 617
     ClientRectLeft = 4
-    ClientRectRight = 1416
+    ClientRectRight = 1460
     ClientRectTop = 33
     object tabVisualizacao: TcxTabSheet
       Caption = 'Visualiza'#231#227'o geral'
       ImageIndex = 0
+      ExplicitWidth = 1412
       ExplicitHeight = 594
       object Panel4: TPanel
         Left = 0
         Top = 0
-        Width = 1412
+        Width = 1456
         Height = 584
         Align = alClient
         ParentBackground = False
         TabOrder = 0
+        ExplicitWidth = 1412
         ExplicitHeight = 594
         DesignSize = (
-          1412
+          1456
           584)
         object cxGroupBox1: TcxGroupBox
           Left = 8
-          Top = 8
+          Top = 12
           Margins.Left = 4
           Margins.Top = 4
           Margins.Right = 4
@@ -3933,8 +3937,11 @@ object FRMPrincipal: TFRMPrincipal
           Anchors = [akLeft, akTop, akRight]
           PanelStyle.CaptionIndent = 3
           TabOrder = 0
+          DesignSize = (
+            1437
+            185)
           Height = 185
-          Width = 1393
+          Width = 1437
           object Label1: TLabel
             Left = 16
             Top = 32
@@ -3950,17 +3957,19 @@ object FRMPrincipal: TFRMPrincipal
             Caption = 'Projeto'
           end
           object Label3: TLabel
-            Left = 304
+            Left = 288
             Top = 32
             Width = 51
             Height = 21
+            Anchors = [akTop, akRight]
             Caption = 'Cliente'
           end
           object Label4: TLabel
-            Left = 304
+            Left = 288
             Top = 104
             Width = 55
             Height = 21
+            Anchors = [akTop, akRight]
             Caption = 'Per'#237'odo'
           end
           object cxv_orcamento: TcxTextEdit
@@ -3970,8 +3979,9 @@ object FRMPrincipal: TFRMPrincipal
             Margins.Top = 4
             Margins.Right = 4
             Margins.Bottom = 4
+            Anchors = [akLeft, akTop, akRight]
             TabOrder = 0
-            Width = 275
+            Width = 257
           end
           object cxv_projeto: TcxTextEdit
             Left = 16
@@ -3980,16 +3990,18 @@ object FRMPrincipal: TFRMPrincipal
             Margins.Top = 4
             Margins.Right = 4
             Margins.Bottom = 4
+            Anchors = [akLeft, akTop, akRight]
             TabOrder = 1
-            Width = 275
+            Width = 257
           end
           object cxv_cliente: TcxLookupComboBox
-            Left = 304
+            Left = 288
             Top = 60
             Margins.Left = 4
             Margins.Top = 4
             Margins.Right = 4
             Margins.Bottom = 4
+            Anchors = [akTop, akRight]
             Properties.KeyFieldNames = 'ID_CLIENTE'
             Properties.ListColumns = <
               item
@@ -3999,15 +4011,16 @@ object FRMPrincipal: TFRMPrincipal
             Properties.ListSource = DSClientes
             Properties.MaxLength = 200
             TabOrder = 2
-            Width = 366
+            Width = 382
           end
           object dtv_inicial: TcxDateEdit
-            Left = 304
+            Left = 288
             Top = 132
             Margins.Left = 4
             Margins.Top = 4
             Margins.Right = 4
             Margins.Bottom = 4
+            Anchors = [akTop, akRight]
             TabOrder = 3
             Width = 180
           end
@@ -4018,6 +4031,7 @@ object FRMPrincipal: TFRMPrincipal
             Margins.Top = 4
             Margins.Right = 4
             Margins.Bottom = 4
+            Anchors = [akTop, akRight]
             TabOrder = 4
             Width = 180
           end
@@ -4028,6 +4042,7 @@ object FRMPrincipal: TFRMPrincipal
             Margins.Top = 4
             Margins.Right = 4
             Margins.Bottom = 4
+            Anchors = [akTop, akRight]
             Caption = 'Tipo'
             Properties.Items = <
               item
@@ -4051,6 +4066,7 @@ object FRMPrincipal: TFRMPrincipal
             Margins.Top = 4
             Margins.Right = 4
             Margins.Bottom = 4
+            Anchors = [akTop, akRight]
             Caption = 'Status'
             Properties.Columns = 2
             Properties.Items = <
@@ -4077,7 +4093,7 @@ object FRMPrincipal: TFRMPrincipal
             Width = 394
           end
           object btv_consultar: TcxButton
-            Left = 1265
+            Left = 1278
             Top = 56
             Width = 115
             Height = 38
@@ -4085,6 +4101,7 @@ object FRMPrincipal: TFRMPrincipal
             Margins.Top = 4
             Margins.Right = 4
             Margins.Bottom = 4
+            Anchors = [akTop, akRight]
             Caption = 'Consultar'
             OptionsImage.Glyph.SourceDPI = 96
             OptionsImage.Glyph.Data = {
@@ -4121,7 +4138,7 @@ object FRMPrincipal: TFRMPrincipal
             OnClick = btv_consultarClick
           end
           object btv_limpar: TcxButton
-            Left = 1265
+            Left = 1278
             Top = 115
             Width = 115
             Height = 38
@@ -4129,6 +4146,7 @@ object FRMPrincipal: TFRMPrincipal
             Margins.Top = 4
             Margins.Right = 4
             Margins.Bottom = 4
+            Anchors = [akTop, akRight]
             Caption = 'Limpar'
             OptionsImage.Glyph.SourceDPI = 96
             OptionsImage.Glyph.Data = {
@@ -4164,7 +4182,7 @@ object FRMPrincipal: TFRMPrincipal
         object grid_visualizacaoGeral: TcxGrid
           Left = 1
           Top = 205
-          Width = 1410
+          Width = 1454
           Height = 378
           Margins.Left = 4
           Margins.Top = 4
@@ -4175,6 +4193,7 @@ object FRMPrincipal: TFRMPrincipal
           TabOrder = 1
           ExplicitLeft = 24
           ExplicitTop = 201
+          ExplicitWidth = 1410
           object grid_visualizacaoGeralDBTableView1: TcxGridDBTableView
             Navigator.Buttons.CustomButtons = <>
             ScrollbarAnnotations.CustomAnnotations = <>
@@ -4243,27 +4262,27 @@ object FRMPrincipal: TFRMPrincipal
             object grid_visualizacaoGeralDBTableView1DATA_ORCAMENTO: TcxGridDBColumn
               Caption = 'Data do or'#231'amento'
               DataBinding.FieldName = 'DATA_ORCAMENTO'
-              Width = 155
+              Width = 180
             end
             object grid_visualizacaoGeralDBTableView1DATA_VALIDADE: TcxGridDBColumn
               Caption = 'Data de validade'
               DataBinding.FieldName = 'DATA_VALIDADE'
-              Width = 155
+              Width = 180
             end
             object grid_visualizacaoGeralDBTableView1TITULO_PROJETO: TcxGridDBColumn
               Caption = 'Projeto'
               DataBinding.FieldName = 'TITULO_PROJETO'
-              Width = 303
+              Width = 415
             end
             object grid_visualizacaoGeralDBTableView1DATA_ENTREGA: TcxGridDBColumn
               Caption = 'Data de entrega'
               DataBinding.FieldName = 'DATA_ENTREGA'
-              Width = 155
+              Width = 180
             end
             object grid_visualizacaoGeralDBTableView1PEDIDO_CLIENTE: TcxGridDBColumn
               Caption = 'Pedido do cliente'
               DataBinding.FieldName = 'PEDIDO_CLIENTE'
-              Width = 158
+              Width = 200
             end
             object grid_visualizacaoGeralDBTableView1QTDE_HORAS: TcxGridDBColumn
               Caption = 'Qtde. Horas'
@@ -4295,16 +4314,22 @@ object FRMPrincipal: TFRMPrincipal
     object tabRegistro: TcxTabSheet
       Caption = 'Registro'
       ImageIndex = 1
+      ExplicitWidth = 1412
       ExplicitHeight = 594
       object Panel2: TPanel
         Left = 0
         Top = 0
-        Width = 1412
+        Width = 1456
         Height = 584
         Align = alClient
+        Anchors = [akTop, akBottom]
         ParentBackground = False
         TabOrder = 0
+        ExplicitWidth = 1412
         ExplicitHeight = 594
+        DesignSize = (
+          1456
+          584)
         object cxGroupBox3: TcxGroupBox
           Left = 18
           Top = 22
@@ -4313,12 +4338,14 @@ object FRMPrincipal: TFRMPrincipal
           Margins.Right = 4
           Margins.Bottom = 4
           TabStop = True
+          Anchors = [akLeft, akTop, akRight]
           Caption = 'Informa'#231#245'es gerais'
           Enabled = False
           PanelStyle.CaptionIndent = 3
           TabOrder = 0
+          ExplicitWidth = 1375
           Height = 130
-          Width = 1375
+          Width = 1411
           object Label8: TLabel
             Left = 40
             Top = 40
@@ -4418,12 +4445,14 @@ object FRMPrincipal: TFRMPrincipal
           Margins.Right = 4
           Margins.Bottom = 4
           TabStop = True
+          Anchors = [akLeft, akTop, akRight]
           Caption = 'Or'#231'amento'
           Enabled = False
           PanelStyle.CaptionIndent = 3
           TabOrder = 1
+          ExplicitWidth = 1375
           Height = 130
-          Width = 1375
+          Width = 1411
           object Label9: TLabel
             Left = 40
             Top = 40
@@ -4560,12 +4589,14 @@ object FRMPrincipal: TFRMPrincipal
           Margins.Right = 4
           Margins.Bottom = 4
           TabStop = True
+          Anchors = [akLeft, akTop, akRight]
           Caption = 'Projeto'
           Enabled = False
           PanelStyle.CaptionIndent = 3
           TabOrder = 2
+          ExplicitWidth = 1375
           Height = 131
-          Width = 1375
+          Width = 1411
           object Label18: TLabel
             Left = 40
             Top = 48
@@ -4627,6 +4658,7 @@ object FRMPrincipal: TFRMPrincipal
           Margins.Top = 4
           Margins.Right = 4
           Margins.Bottom = 4
+          Anchors = [akLeft, akBottom]
           Caption = 'Adicionar'
           OptionsImage.Glyph.SourceDPI = 96
           OptionsImage.Glyph.Data = {
@@ -4664,6 +4696,7 @@ object FRMPrincipal: TFRMPrincipal
           Margins.Top = 4
           Margins.Right = 4
           Margins.Bottom = 4
+          Anchors = [akLeft, akBottom]
           Caption = 'Alterar'
           Enabled = False
           OptionsImage.Glyph.SourceDPI = 96
@@ -4705,6 +4738,7 @@ object FRMPrincipal: TFRMPrincipal
           Margins.Top = 4
           Margins.Right = 4
           Margins.Bottom = 4
+          Anchors = [akLeft, akBottom]
           Caption = 'Excluir'
           Enabled = False
           OptionsImage.Glyph.SourceDPI = 96
@@ -4736,7 +4770,7 @@ object FRMPrincipal: TFRMPrincipal
           OnClick = btr_excluirClick
         end
         object btr_salvar: TcxButton
-          Left = 1125
+          Left = 1161
           Top = 519
           Width = 115
           Height = 38
@@ -4744,6 +4778,7 @@ object FRMPrincipal: TFRMPrincipal
           Margins.Top = 4
           Margins.Right = 4
           Margins.Bottom = 4
+          Anchors = [akRight, akBottom]
           Caption = 'Salvar'
           Enabled = False
           OptionsImage.Glyph.SourceDPI = 96
@@ -4770,9 +4805,10 @@ object FRMPrincipal: TFRMPrincipal
           OptionsImage.Spacing = 5
           TabOrder = 3
           OnClick = btr_salvarClick
+          ExplicitLeft = 1125
         end
         object btr_cancelar: TcxButton
-          Left = 1258
+          Left = 1294
           Top = 519
           Width = 115
           Height = 38
@@ -4780,6 +4816,7 @@ object FRMPrincipal: TFRMPrincipal
           Margins.Top = 4
           Margins.Right = 4
           Margins.Bottom = 4
+          Anchors = [akRight, akBottom]
           Caption = 'Cancelar'
           Enabled = False
           OptionsImage.Glyph.SourceDPI = 96
@@ -4819,6 +4856,7 @@ object FRMPrincipal: TFRMPrincipal
           OptionsImage.Spacing = 5
           TabOrder = 7
           OnClick = btr_cancelarClick
+          ExplicitLeft = 1258
         end
         object btr_anotacoes: TcxButton
           Left = 1107
@@ -4855,16 +4893,21 @@ object FRMPrincipal: TFRMPrincipal
     object tabCliente: TcxTabSheet
       Caption = 'Cliente'
       ImageIndex = 2
+      ExplicitWidth = 1412
       ExplicitHeight = 594
       object Panel3: TPanel
         Left = 0
         Top = 0
-        Width = 1412
+        Width = 1456
         Height = 584
         Align = alClient
         ParentBackground = False
         TabOrder = 0
+        ExplicitWidth = 1412
         ExplicitHeight = 594
+        DesignSize = (
+          1456
+          584)
         object cxGroupBox2: TcxGroupBox
           Left = 14
           Top = 14
@@ -4872,11 +4915,16 @@ object FRMPrincipal: TFRMPrincipal
           Margins.Top = 4
           Margins.Right = 4
           Margins.Bottom = 4
+          Anchors = [akLeft, akTop, akRight]
           Enabled = False
           PanelStyle.CaptionIndent = 3
           TabOrder = 0
+          ExplicitWidth = 987
+          DesignSize = (
+            1023
+            209)
           Height = 209
-          Width = 987
+          Width = 1023
           object Label5: TLabel
             Left = 20
             Top = 23
@@ -4935,23 +4983,27 @@ object FRMPrincipal: TFRMPrincipal
             Margins.Top = 4
             Margins.Right = 4
             Margins.Bottom = 4
+            Anchors = [akLeft, akTop, akRight]
             TabOrder = 3
+            ExplicitWidth = 429
             Height = 101
-            Width = 429
+            Width = 465
           end
         end
         object grid_cliente: TcxGrid
           Left = 1
           Top = 289
-          Width = 1410
+          Width = 1454
           Height = 294
           Margins.Left = 4
           Margins.Top = 4
           Margins.Right = 4
           Margins.Bottom = 4
           Align = alBottom
+          Anchors = [akLeft, akTop, akRight, akBottom]
           TabOrder = 1
           ExplicitTop = 299
+          ExplicitWidth = 1410
           object grid_clienteDBTableView1: TcxGridDBTableView
             Navigator.Buttons.CustomButtons = <>
             ScrollbarAnnotations.CustomAnnotations = <>
@@ -5025,7 +5077,7 @@ object FRMPrincipal: TFRMPrincipal
           OnClick = btc_consultarClick
         end
         object btc_adicionar: TcxButton
-          Left = 1074
+          Left = 1110
           Top = 66
           Width = 115
           Height = 38
@@ -5033,6 +5085,7 @@ object FRMPrincipal: TFRMPrincipal
           Margins.Top = 4
           Margins.Right = 4
           Margins.Bottom = 4
+          Anchors = [akTop, akRight]
           Caption = 'Adicionar'
           OptionsImage.Glyph.SourceDPI = 96
           OptionsImage.Glyph.Data = {
@@ -5060,9 +5113,10 @@ object FRMPrincipal: TFRMPrincipal
           OptionsImage.Spacing = 5
           TabOrder = 4
           OnClick = btc_adicionarClick
+          ExplicitLeft = 1074
         end
         object btc_alterar: TcxButton
-          Left = 1074
+          Left = 1110
           Top = 116
           Width = 115
           Height = 38
@@ -5070,6 +5124,7 @@ object FRMPrincipal: TFRMPrincipal
           Margins.Top = 4
           Margins.Right = 4
           Margins.Bottom = 4
+          Anchors = [akTop, akRight]
           Caption = 'Alterar'
           Enabled = False
           OptionsImage.Glyph.SourceDPI = 96
@@ -5101,9 +5156,10 @@ object FRMPrincipal: TFRMPrincipal
           OptionsImage.Spacing = 5
           TabOrder = 5
           OnClick = btc_alterarClick
+          ExplicitLeft = 1074
         end
         object btc_excluir: TcxButton
-          Left = 1074
+          Left = 1110
           Top = 166
           Width = 115
           Height = 38
@@ -5111,6 +5167,7 @@ object FRMPrincipal: TFRMPrincipal
           Margins.Top = 4
           Margins.Right = 4
           Margins.Bottom = 4
+          Anchors = [akTop, akRight]
           Caption = 'Excluir'
           Enabled = False
           OptionsImage.Glyph.SourceDPI = 96
@@ -5140,9 +5197,10 @@ object FRMPrincipal: TFRMPrincipal
           OptionsImage.Spacing = 5
           TabOrder = 6
           OnClick = btc_excluirClick
+          ExplicitLeft = 1074
         end
         object btc_salvar: TcxButton
-          Left = 1228
+          Left = 1264
           Top = 66
           Width = 115
           Height = 38
@@ -5150,6 +5208,7 @@ object FRMPrincipal: TFRMPrincipal
           Margins.Top = 4
           Margins.Right = 4
           Margins.Bottom = 4
+          Anchors = [akTop, akRight]
           Caption = 'Salvar'
           Enabled = False
           OptionsImage.Glyph.SourceDPI = 96
@@ -5176,9 +5235,10 @@ object FRMPrincipal: TFRMPrincipal
           OptionsImage.Spacing = 5
           TabOrder = 7
           OnClick = btc_salvarClick
+          ExplicitLeft = 1228
         end
         object btc_cancelar: TcxButton
-          Left = 1228
+          Left = 1264
           Top = 116
           Width = 115
           Height = 38
@@ -5186,6 +5246,7 @@ object FRMPrincipal: TFRMPrincipal
           Margins.Top = 4
           Margins.Right = 4
           Margins.Bottom = 4
+          Anchors = [akTop, akRight]
           Caption = 'Cancelar'
           Enabled = False
           OptionsImage.Glyph.SourceDPI = 96
@@ -5225,6 +5286,7 @@ object FRMPrincipal: TFRMPrincipal
           OptionsImage.Spacing = 5
           TabOrder = 8
           OnClick = btc_cancelarClick
+          ExplicitLeft = 1228
         end
       end
     end

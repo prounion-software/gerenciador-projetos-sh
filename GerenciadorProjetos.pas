@@ -394,8 +394,11 @@ begin
     end;
 
     QryClientes.Delete;
+    cxc_nome.Clear;
+    cxc_contato1.Clear;
+    cxc_contato2.Clear;
+    cxc_obs.Clear;
   end;
-
 end;
 
 procedure TFRMPrincipal.btc_salvarClick(Sender: TObject);
