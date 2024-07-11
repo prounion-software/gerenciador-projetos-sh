@@ -230,7 +230,7 @@ implementation
 
 {$R *.dfm}
 
-uses UAnotacoes, UTarefas;
+uses UAnotacoes, UTarefas, UUtils;
 
 procedure TFRMPrincipal.avisoCamposVazios;
 begin
@@ -715,6 +715,8 @@ end;
 
 procedure TFRMPrincipal.FormShow(Sender: TObject);
 begin
+
+
   cxPageControl1.ActivePageIndex := 0;
   QryProjetos.Open;
   QryClientes.Open;

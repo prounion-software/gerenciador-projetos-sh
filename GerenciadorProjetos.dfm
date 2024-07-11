@@ -4171,6 +4171,7 @@ object FRMPrincipal: TFRMPrincipal
           Margins.Right = 4
           Margins.Bottom = 4
           Align = alBottom
+          Anchors = [akLeft, akTop, akRight, akBottom]
           TabOrder = 1
           ExplicitLeft = 24
           ExplicitTop = 201
@@ -5230,7 +5231,7 @@ object FRMPrincipal: TFRMPrincipal
   end
   object FDConnection1: TFDConnection
     Params.Strings = (
-      'Database=C:\Gerenciador de projetos SH\SoftwareHouse'
+      'Database=banco.sqlite'
       'DriverID=SQLite')
     LoginPrompt = False
     Left = 920
