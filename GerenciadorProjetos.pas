@@ -315,7 +315,7 @@ begin
         Exit;
       end;
 
-      if dtr_entrega.Text = '' then
+      if (dtr_entrega.Text = '') and (cxr_status.Text <> 'Pendente') then
       begin
         Application.MessageBox('Informe a data de entrega do projeto.', 'Campos obrigatórios', MB_ICONASTERISK + MB_OK);
         dtr_entrega.SetFocus;

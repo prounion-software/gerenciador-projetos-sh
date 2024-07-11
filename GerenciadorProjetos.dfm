@@ -3901,10 +3901,8 @@ object FRMPrincipal: TFRMPrincipal
     Align = alClient
     Anchors = [akTop, akRight]
     TabOrder = 0
-    Properties.ActivePage = tabVisualizacao
+    Properties.ActivePage = tabRegistro
     Properties.CustomButtons.Buttons = <>
-    ExplicitWidth = 1420
-    ExplicitHeight = 631
     ClientRectBottom = 617
     ClientRectLeft = 4
     ClientRectRight = 1460
@@ -3912,8 +3910,6 @@ object FRMPrincipal: TFRMPrincipal
     object tabVisualizacao: TcxTabSheet
       Caption = 'Visualiza'#231#227'o geral'
       ImageIndex = 0
-      ExplicitWidth = 1412
-      ExplicitHeight = 594
       object Panel4: TPanel
         Left = 0
         Top = 0
@@ -3922,8 +3918,6 @@ object FRMPrincipal: TFRMPrincipal
         Align = alClient
         ParentBackground = False
         TabOrder = 0
-        ExplicitWidth = 1412
-        ExplicitHeight = 594
         DesignSize = (
           1456
           584)
@@ -4191,9 +4185,6 @@ object FRMPrincipal: TFRMPrincipal
           Align = alBottom
           Anchors = [akLeft, akTop, akRight, akBottom]
           TabOrder = 1
-          ExplicitLeft = 24
-          ExplicitTop = 201
-          ExplicitWidth = 1410
           object grid_visualizacaoGeralDBTableView1: TcxGridDBTableView
             Navigator.Buttons.CustomButtons = <>
             ScrollbarAnnotations.CustomAnnotations = <>
@@ -4314,8 +4305,6 @@ object FRMPrincipal: TFRMPrincipal
     object tabRegistro: TcxTabSheet
       Caption = 'Registro'
       ImageIndex = 1
-      ExplicitWidth = 1412
-      ExplicitHeight = 594
       object Panel2: TPanel
         Left = 0
         Top = 0
@@ -4325,8 +4314,6 @@ object FRMPrincipal: TFRMPrincipal
         Anchors = [akTop, akBottom]
         ParentBackground = False
         TabOrder = 0
-        ExplicitWidth = 1412
-        ExplicitHeight = 594
         DesignSize = (
           1456
           584)
@@ -4343,7 +4330,6 @@ object FRMPrincipal: TFRMPrincipal
           Enabled = False
           PanelStyle.CaptionIndent = 3
           TabOrder = 0
-          ExplicitWidth = 1375
           Height = 130
           Width = 1411
           object Label8: TLabel
@@ -4450,7 +4436,6 @@ object FRMPrincipal: TFRMPrincipal
           Enabled = False
           PanelStyle.CaptionIndent = 3
           TabOrder = 1
-          ExplicitWidth = 1375
           Height = 130
           Width = 1411
           object Label9: TLabel
@@ -4594,7 +4579,6 @@ object FRMPrincipal: TFRMPrincipal
           Enabled = False
           PanelStyle.CaptionIndent = 3
           TabOrder = 2
-          ExplicitWidth = 1375
           Height = 131
           Width = 1411
           object Label18: TLabel
@@ -4805,7 +4789,6 @@ object FRMPrincipal: TFRMPrincipal
           OptionsImage.Spacing = 5
           TabOrder = 3
           OnClick = btr_salvarClick
-          ExplicitLeft = 1125
         end
         object btr_cancelar: TcxButton
           Left = 1294
@@ -4856,7 +4839,6 @@ object FRMPrincipal: TFRMPrincipal
           OptionsImage.Spacing = 5
           TabOrder = 7
           OnClick = btr_cancelarClick
-          ExplicitLeft = 1258
         end
         object btr_anotacoes: TcxButton
           Left = 1107
@@ -4893,8 +4875,6 @@ object FRMPrincipal: TFRMPrincipal
     object tabCliente: TcxTabSheet
       Caption = 'Cliente'
       ImageIndex = 2
-      ExplicitWidth = 1412
-      ExplicitHeight = 594
       object Panel3: TPanel
         Left = 0
         Top = 0
@@ -4903,8 +4883,6 @@ object FRMPrincipal: TFRMPrincipal
         Align = alClient
         ParentBackground = False
         TabOrder = 0
-        ExplicitWidth = 1412
-        ExplicitHeight = 594
         DesignSize = (
           1456
           584)
@@ -4919,7 +4897,6 @@ object FRMPrincipal: TFRMPrincipal
           Enabled = False
           PanelStyle.CaptionIndent = 3
           TabOrder = 0
-          ExplicitWidth = 987
           DesignSize = (
             1023
             209)
@@ -4985,7 +4962,6 @@ object FRMPrincipal: TFRMPrincipal
             Margins.Bottom = 4
             Anchors = [akLeft, akTop, akRight]
             TabOrder = 3
-            ExplicitWidth = 429
             Height = 101
             Width = 465
           end
@@ -5002,8 +4978,6 @@ object FRMPrincipal: TFRMPrincipal
           Align = alBottom
           Anchors = [akLeft, akTop, akRight, akBottom]
           TabOrder = 1
-          ExplicitTop = 299
-          ExplicitWidth = 1410
           object grid_clienteDBTableView1: TcxGridDBTableView
             Navigator.Buttons.CustomButtons = <>
             ScrollbarAnnotations.CustomAnnotations = <>
@@ -5113,7 +5087,6 @@ object FRMPrincipal: TFRMPrincipal
           OptionsImage.Spacing = 5
           TabOrder = 4
           OnClick = btc_adicionarClick
-          ExplicitLeft = 1074
         end
         object btc_alterar: TcxButton
           Left = 1110
@@ -5156,7 +5129,6 @@ object FRMPrincipal: TFRMPrincipal
           OptionsImage.Spacing = 5
           TabOrder = 5
           OnClick = btc_alterarClick
-          ExplicitLeft = 1074
         end
         object btc_excluir: TcxButton
           Left = 1110
@@ -5197,7 +5169,6 @@ object FRMPrincipal: TFRMPrincipal
           OptionsImage.Spacing = 5
           TabOrder = 6
           OnClick = btc_excluirClick
-          ExplicitLeft = 1074
         end
         object btc_salvar: TcxButton
           Left = 1264
@@ -5235,7 +5206,6 @@ object FRMPrincipal: TFRMPrincipal
           OptionsImage.Spacing = 5
           TabOrder = 7
           OnClick = btc_salvarClick
-          ExplicitLeft = 1228
         end
         object btc_cancelar: TcxButton
           Left = 1264
@@ -5286,7 +5256,6 @@ object FRMPrincipal: TFRMPrincipal
           OptionsImage.Spacing = 5
           TabOrder = 8
           OnClick = btc_cancelarClick
-          ExplicitLeft = 1228
         end
       end
     end
@@ -5313,6 +5282,7 @@ object FRMPrincipal: TFRMPrincipal
       FieldName = 'ID_REGISTRO'
       Origin = 'ID_REGISTRO'
       ProviderFlags = [pfInWhere, pfInKey]
+      ReadOnly = True
     end
     object QryProjetosTIPO: TIntegerField
       FieldName = 'TIPO'
@@ -5382,6 +5352,7 @@ object FRMPrincipal: TFRMPrincipal
       FieldName = 'ID_CLIENTE'
       Origin = 'ID_CLIENTE'
       ProviderFlags = [pfInWhere, pfInKey]
+      ReadOnly = True
     end
     object QryClientesNOME_CLIENTE: TWideStringField
       FieldName = 'NOME_CLIENTE'
@@ -5429,6 +5400,7 @@ object FRMPrincipal: TFRMPrincipal
       FieldName = 'ID_TAREFA'
       Origin = 'ID_TAREFA'
       ProviderFlags = [pfInWhere, pfInKey]
+      ReadOnly = True
     end
     object QryTarefasDESCRICAO: TWideStringField
       FieldName = 'DESCRICAO'
@@ -5465,6 +5437,7 @@ object FRMPrincipal: TFRMPrincipal
       FieldName = 'ID_ANOTACAO'
       Origin = 'ID_ANOTACAO'
       ProviderFlags = [pfInWhere, pfInKey]
+      ReadOnly = True
     end
     object QryAnotacoesDESCRICAO: TWideStringField
       FieldName = 'DESCRICAO'
@@ -5505,6 +5478,7 @@ object FRMPrincipal: TFRMPrincipal
       FieldName = 'ID_REGISTRO'
       Origin = 'ID_REGISTRO'
       ProviderFlags = [pfInWhere, pfInKey]
+      ReadOnly = True
     end
     object QryClienteProjetoCLIENTE: TIntegerField
       FieldName = 'CLIENTE'
